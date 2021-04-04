@@ -1,0 +1,21 @@
+#!/bin/bash
+echo EXECUTANDO ATUALIZAÇÔES
+sleep 1
+sudo apt update;sudo apt upgrade -y;sudo apt dist-upgrade -y;sudo apt install -f;sudo apt autoremove -y;
+sleep 2
+echo TAREFA CONCLUIDA
+echo
+echo Limpando a tela
+sleep 3
+clear
+echo "SEU SISTEMA FOI ATUALIZADO"
+echo
+echo "Gostaria de reiniciar o sistema?"
+echo "     SIM [1]       Não [2]"
+read numero;
+if [ $numero -eq 1 ]
+then
+	reboot
+else [ $numero -eq 2 ]
+	exit
+fi
