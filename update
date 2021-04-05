@@ -15,7 +15,7 @@ echo "     SIM [1]       Não [2]"
 read numero;
 if [ $numero -eq 1 ]
 then
-	reboot
+	reboot;echo reiniciando o sistema...;sleep 2;
 else [ $numero -eq 2 ]
 	exit
 fi
